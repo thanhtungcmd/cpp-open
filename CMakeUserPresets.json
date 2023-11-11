@@ -4,6 +4,7 @@
         "conan": {}
     },
     "include": [
-        "/Users/tungbt/Code/OS/cpp-one/build/conan/CMakePresets.json"
+        "/Users/tungbt/Code/OS/cpp-one/build/conan/CMakePresets.json",
+        "/Users/tungbt/Code/OS/cpp-one/build/CMakePresets.json"
     ]
 }
