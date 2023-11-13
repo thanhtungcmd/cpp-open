@@ -10,4 +10,4 @@ add_executable(cpp_one src/main.cpp
         src/simple/person.h
 )
 
-target_link_libraries(your_exe_or_lib_name opencv::opencv)
+target_link_libraries(cpp_one opencv::opencv)

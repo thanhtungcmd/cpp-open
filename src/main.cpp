@@ -10,7 +10,8 @@ int main() {
     cout << "Hello, World!" << endl;
     cout << zlibVersion() << endl;
 
-    person person("Resend", 30);
+    person person("Test", 30);
     cout << person.getAge() << endl;
+    cout << person.getName() << endl;
     return 0;
 }
