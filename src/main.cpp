@@ -1,26 +1,18 @@
 #include <iostream>
 #include <zlib.h>
-#include <opencv2/core.hpp>
-#include <opencv2/highgui.hpp>
 #include <opencv2/opencv.hpp>
-
-//#include <QImage>
-//#include <QPixmap>
-//#include <QLabel>
-
 #include "simple/person.h"
 
 int main() {
 
-//    person().setAge(5);
-//    cout << "Hello, World!" << endl;
-//    cout << zlibVersion() << endl;
-//
-//    person person("Test", 30);
-//    cout << person.getAge() << endl;
-//    cout << person.getName() << endl;
+    std::cout << "Hello, World!" << std::endl;
+    std::cout << zlibVersion() << std::endl;
+    person().setAge(5);
+    person person("Test", 30);
+    cout << person.getAge() << endl;
+    cout << person.getName() << endl;
 
-    std::string image_path = "/Users/tungbt/Code/OS/cpp-one/test.png";
+    std::string image_path = "/Users/tungbt/Code/OS/cpp-three/test.png";
     cv::Mat image = cv::imread(image_path, cv::IMREAD_COLOR);
 
     // Kiểm tra xem việc đọc ảnh có thành công không
@@ -42,7 +34,7 @@ int main() {
     cv::waitKey(0);
 
     // Lưu ảnh đã làm mờ
-    cv::imwrite("/Users/tungbt/Code/OS/cpp-one/blur_test.png", blurredImage);
+    cv::imwrite("/Users/tungbt/Code/OS/cpp-three/blur_test.png", blurredImage);
 
     return 0;
 }
